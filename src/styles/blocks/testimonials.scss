@@ -1,35 +1,33 @@
-.testimonials{
-  & p{
+.testimonials {
+  & p {
     font-size: 13px;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 3px;
-    color: #C0CDD7;
+    color: #c0cdd7;
   }
 
-  &__title{
+  &__title {
     color: #253757;
     font-size: 32px;
     line-height: 150%;
     font-weight: 600;
     margin-bottom: 48px;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-bottom: 56px;
     }
 
-    @include on-small-desktop{
+    @include on-small-desktop {
       margin-bottom: 85px;
     }
   }
 
-  &__cards{
+  &__cards {
     @include page-grid;
-
-
   }
 
-  &__card{
+  &__card {
     height: 456px;
     background-color: #fff;
     border-radius: 16px;
@@ -37,26 +35,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    font-family: "open sans",Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 150%;
     text-align: center;
     grid-column: 1 / -1;
     margin: 24px 0;
+    cursor: pointer;
+    @include hover(scale, 1.1);
 
-    @include on-tablet{
+    @include on-tablet {
       padding: 32px 98px;
       margin: 30px 0;
     }
 
-    @include on-small-desktop{
+    @include on-small-desktop {
       grid-column: span 4;
       padding: 32px 45px;
     }
 
-    @include on-large-desktop{
+    @include on-large-desktop {
       padding: 32px 56px;
     }
 
@@ -65,37 +65,34 @@
       position: relative;
       z-index: 1;
 
-      @include on-tablet{
+      @include on-tablet {
         padding-bottom: 75px 67px;
       }
 
-      & img{
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center top;
-
-      @include on-tablet{
-        width: 140px;
-        height: 140px;
-
-      }
-
-      @include on-small-desktop{
+      & img {
         width: 110px;
         height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+
+        @include on-tablet {
+          width: 140px;
+          height: 140px;
+        }
+
+        @include on-small-desktop {
+          width: 110px;
+          height: 110px;
+        }
+
+        @include on-large-desktop {
+          width: 140px;
+          height: 140px;
+        }
       }
 
-      @include on-large-desktop{
-        width: 140px;
-        height: 140px;
-      }
-
-      }
-
-
-      &::before{
+      &::before {
         position: absolute;
         content: '';
         display: block;
@@ -118,29 +115,26 @@
         width: 90px;
         height: 109px;
       }
-
-
-
     }
 
-    &-comment{
+    &-comment {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      color: #6C788B;
+      color: #6c788b;
 
-      & img{
+      & img {
         padding-bottom: 8px;
       }
     }
 
-    &-name{
+    &-name {
       color: #253757;
     }
 
-    &-profession{
-      color: #C0CDD7;
+    &-profession {
+      color: #c0cdd7;
       letter-spacing: 3px;
       font-weight: 700;
       font-family: poppins, Arial, Helvetica, sans-serif;
